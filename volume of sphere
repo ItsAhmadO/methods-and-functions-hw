@@ -1,1 +1,10 @@
+if __name__ == '__main__':
+    import math
+    rad = int(input())
+
+    def vol(rad):
+       volume = 4/3 * math.pi * (rad**3)
+       return volume
+
+    print(vol(rad))
 
