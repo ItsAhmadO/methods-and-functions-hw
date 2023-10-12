@@ -1,0 +1,14 @@
+if __name__ == '__main__':
+    s = input()
+    s = s.replace(" ", "").lower()
+    New_list = []
+    for letter in s:
+        if letter not in New_list:
+            New_list.append(letter)
+
+    New_list = sorted(New_list)
+
+    if New_list == list('abcdefghijklmnopqrstuvwxyz'):
+        print(True)
+    else:
+        print(False)
