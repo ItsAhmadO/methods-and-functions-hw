@@ -1,0 +1,12 @@
+if __name__ == '__main__':
+    s = input()
+    Upper = 0
+    Lower = 0
+    for letter in s:
+        if letter.isupper() == True:
+            Upper = Upper + 1
+        else:
+            Lower = Lower + 1
+
+    print(Upper)
+    print(Lower)
