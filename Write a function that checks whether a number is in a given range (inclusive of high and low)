@@ -1,0 +1,15 @@
+if __name__ == '__main__':
+    high = int(input())
+    low = int(input())
+    n = int(input())
+
+    def checker(high,low,n):
+        if high >= n and n >= low:
+            return True
+        else:
+            return False
+
+    if checker(high,low,n) == True:
+        print("{} is in the range between {} and {}".format(n,low,high))
+    else:
+        print("{} is not in the range between {} and {}".format(n,low,high))
